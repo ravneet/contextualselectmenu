@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html  lang="en"><!--<![endif]-->
+    <head>
+		
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<script type='text/javascript' src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+        <script type='text/javascript' src="js/jquery.contextualselectmenu.js"></script>
+		
+	</head>
+	<body>
+	<script type='text/javascript'><!--
+	    var t1;
+	   	$(document).ready(function() {
+	       t1 = $("#rav").contextualSelectMenu(
+            {
+                data:["a","b","c"]
+            });
+			t1.setSelectedIndex(1);
+			t1.bind('listChanged', function (e, data) { alert("You Selected "+t1.getSelectedText()) });
+		});
+			
+			//-->
+		</script>
+        <div id="rav" />
+        <div id="rav2" />
+      
+	</body>
+</html>

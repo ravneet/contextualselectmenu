@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html  lang="en"><!--<![endif]-->
+    <head>
+		
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+		
+        <script type='text/javascript' src="js/jquery.contextualselectmenu2.js"></script>
+		
+	</head>
+	<body>
+	<script type='text/javascript'><!--
+	    var t1;
+	   window.onload = function() {
+	   	    t1 = new ContextualSelectMenu(document.getElementById("rav"),
+            {
+                data:["a","b","c"]
+            });
+	   	    document.addEventListener("listChanged", function (event) {
+	   	        alert(t1.getSelectedIndex())
+	   	        
+	   	    },true);
+	   	 
+		};
+			
+			//-->
+		</script>
+        <div id="rav" />
+        <div id="rav2" />
+      
+	</body>
+</html>
